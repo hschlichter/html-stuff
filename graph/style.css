@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+#graph-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: grab;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='19' y='19' width='2' height='2' style='fill:rgb(200,200,200);' /%3E%3C/svg%3E");
+    background-size: 20px 20px;
+}
+
+.node {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: move;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.content {
+    padding: 10px;
+}
+
+.property {
+    margin: 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.property .value {
+    font-weight: normal;
+}
+
+line {
+    stroke: #333; /* Color of the line */
+    stroke-width: 1; /* Thickness of the line */
+}
+
+
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE 10 and IE 11 */
+    user-select: none;         /* Standard syntax */
+}
+

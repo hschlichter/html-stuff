@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Node Graph Layout</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="graph-container">
+            <canvas id="connectionsCanvas" style="position: absolute; top: 0; left: 0; pointer-events: none;"></canvas>
+
+            <div id="node1" class="node" style="top: 20px; left: 20px;">
+                <div class="header">Hello</div>
+                <div class="content">
+                    <div class="property">Property 1: <span class="value">Value 1</span></div>
+                </div>
+            </div>
+
+            <div id="node2" class="node" style="top: 100px; left: 20px;" data-connected-to="node3">
+                <div class="header">World</div>
+                <div class="content"></div>
+            </div>
+
+            <div id="node3" class="node" style="top: 200px; left: 20px;">
+                <div class="header">Fubar</div>
+                <div class="content"></div>
+            </div>
+            <!-- Add more nodes here -->
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
